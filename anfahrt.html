@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Lorem ipsum</title>
+
+<style type="text/css">
+body {
+ background-image:url(./img/background.jpg); 
+ background-repeat:no-repeat; 
+ background-position:center top;
+ background-attachment:scroll;
+}
+
+
+
+#main, #header, #side{
+ border: 0;
+ background-color: rgba(255,255,255,0.85);
+ border-radius: 10px;
+ padding: 20px;
+}
+
+#side{
+ background-color: rgba(230,255,81,0.85);
+ 
+}
+
+#menu_link, a {
+ color: rgb(44,55,22);
+ font-weight: bold;
+ text-decoration: none;
+}
+
+
+
+#header{
+ padding-bottom: 5px;
+ padding-top: 5px;
+ width: 100%;
+}
+
+#menu, #active_menu {
+ text-align: center;
+ border-radius: 10px;
+ border-width: 1px;
+ border-color: #000000;
+ height: 100%;
+ padding-bottom: 15px;
+ padding-top: 15px;
+ 
+}
+
+#active_menu {
+ background-color: rgba(44,55,22,0.85);
+ color: rgb(230,255,81);
+}
+
+#menu {
+ background-color: rgba(180,203,95,0.85);
+}
+
+#menu_td {
+ padding: 5px;
+}
+
+
+
+#active_menu:hover, #menu:hover {
+ background-color: rgba(230,255,81,0.85);
+ color: rgb(44,55,22);
+}
+
+
+
+</style>
+</head>
+<body>
+
+<center><table style="width:1024px"> 
+
+ <tr>
+  <td>
+   <table width="100%"><tr><td>
+	<table id="header"><tr>
+	 <td id="menu_td"><a href="./index.html" id="menu_link"><div id="menu">Über mich</div></a></td>
+    <td id="menu_td"><a href="./index.html" id="menu_link"><div id="menu">Leistungen</div></a></td> 
+    <td id="menu_td"><a href="./anfahrt.html" id="menu_link"><div id="active_menu">Anfahrt</div></a></td>
+    <td id="menu_td"><a href="./index.html" id="menu_link"><div id="menu">Impressum</div></a></td>
+	</tr></table>  
+   </td></tr></table>
+  </td>
+ </tr> 
+ 
+ <tr>
+  <td>
+   <table><tr>
+    <td width="72%"><table><tr>
+	 <td id="main"><div>
+	 
+	 <h3>Anfahrt</h3>
+	 <p>
+	 <iframe src="https://www.google.com/maps/embed?pb=!1m20!1m8!1m3!1d2490.73810666824!2d6.1711182!3d51.3711111!3m2!1i1024!2i768!4f13.1!4m9!1i0!3e6!4m0!4m5!1s0x47c75abed80ba821%3A0xb11cf5af8a4b267f!2sKnibbelstraat%2C+5911+Venlo%2C+Niederlande!3m2!1d51.3711111!2d6.1711181999999996!5e0!3m2!1sde!2s!4v1404738932439" width="600" height="450" frameborder="0" style="border:0"></iframe>
+	 </p></p>
+	 <br>
+	 
+	 <h3>Mit dem Auto</h3>
+	 <p>
+	 Um eine individuelle Route berechnen zu lassen, geben Sie bitte hier Ihre Adresse ein und klicken auf <i>Route berechnen</i>. Daraufhin öffnet sich ein neues Fenster mit der von <i>Google Maps</i> berechneten Route.	 
+	 
+    <form name="search_route" method="get" action="http://maps.google.de/" target="_blank">
+    <input name="saddr" type="text" id="saddr" value="Ihre Adresse">
+    <input name="daddr" type="hidden" id="daddr" value="Knibbelstraat, 5911 Venlo">
+    <input type="submit" name="Submit" value="Route berechnen">
+    </form>
+    </p>
+    <br>
+    
+    <h3>Mit öffentlichen Verkehrsmitteln</h3>
+    <p>Sie können mich auch bequem mit den Straßenbahnlinien 901 und 903 sowie der U-Bahnlinie U79 erreichen. Von den Haltestellen <i>Steinische Gasse</i> bzw <i>König-Heinrich-Platz</i> sind es nur wenige Minuten zu Fuß.</p>
+	 
+	 </div></td>
+    </tr></table></td>
+    
+    <td align="center" valign="top"><table width="100%"><tr>
+    <td id="side" >
+     <div >
+      <h3>Kontakt</h3>
+      <p>
+       Name <br>
+       Straße Nr <br>
+       47XXX Duisburg <br>
+      </p>
+      <br>
+      <table>
+      <tr><td>Tel.:</td><td>0203 - 456789</td></tr>
+      <tr><td>Fax:</td><td>0203 - 456789</td></tr>
+      <tr><td>E-Mail: </td><td><a href="mailto:test@example.com">test@example.com</a></td></tr>
+      </table>
+      <br>
+      <p>Termine nach telefonischer Vereinbarung</p>
+      
+      <p>Hausbesuche möglich</p>
+     </div>
+    </td>
+    </tr></table></td>
+    
+   </tr></table>
+  </td>
+ </tr>
+ 
+</table></center>
+
+</body>
+</html>
